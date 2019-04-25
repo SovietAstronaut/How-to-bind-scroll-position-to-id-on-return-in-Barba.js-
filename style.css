@@ -1,0 +1,137 @@
+*, ::before, ::after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html, body, div, span, applet, main, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+}
+
+article, aside, details, main, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+html {
+  height: 100%;
+  -webkit-text-size-adjust: none;
+  -ms-text-size-adjust: none;
+}
+
+button {
+  cursor: pointer;
+  -webkit-appearance: none;
+  outline: none;
+}
+
+body {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  flex-direction: column;
+  font-family: acumin-pro, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 2.4vmin;
+  letter-spacing: 0.1vmin;
+}
+
+a {
+  color: #000;
+  -webkit-transition: all 0.2s linear;
+  -moz-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+  text-decoration: none; 
+  outline: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
+a:hover {
+  text-decoration: none;
+  color: #f9dc08;
+  border-color: #f9dc08;
+}
+
+.nav {
+  position: fixed;
+  right: 30px; 
+  margin: 0 auto;
+  z-index: 100;
+}
+
+.nav, ul, li, a{
+  color: #fff;
+  list-style: none;
+  text-decoration: none;
+}
+
+.container {
+  z-index: 10;
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  scroll-behavior: smooth;
+  overflow: auto;
+  scroll-snap-type: y mandatory;
+  scroll-snap-type: mandatory;
+  -ms-scroll-snap-type: mandatory;
+  -webkit-scroll-snap-type: mandatory;
+  -webkit-scroll-snap-destination: 0% 0%;
+  -webkit-overflow-scrolling: touch;
+  scroll-padding: 0;
+  -ms-overflow-style: none;  
+  scrollbar-width: none;
+}
+
+.container::-webkit-scrollbar { 
+  display: none; 
+}
+
+section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100vh;
+  scroll-snap-align: start;
+  scroll-snap-coordinate: 0% 0%;
+  -webkit-scroll-snap-coordinate: 0% 0%;
+  text-align: center;
+  overflow: hidden;
+}
+
+section:nth-child(1){
+  background-color: #222;
+}
+
+section:nth-child(2){
+  background-color: #333;
+}
+
+section:nth-child(3){
+  background-color: #444;
+}
+
+section:nth-child(4){
+  background-color: #555;
+}
+
+section:nth-child(5){
+  background-color: #666;
+}
+
+#page2 {
+  background-color: #ccc;
+}
+
+#page3{
+  background-color: #333;
+}
+
+h1 {
+  font-size: 16vmin;
+}
+
